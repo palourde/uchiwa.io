@@ -5,6 +5,9 @@
 		margin: 0;
 		padding: 0px;
 	}
+html {
+	height: 100%;
+}
 
 body {
 	background: #ffffff;
@@ -189,6 +192,12 @@ a:focus {
 /*	################################################################
 	SITE WRAPS
 ################################################################# */
+#genericwrap {
+	min-height: 100%;
+  height: auto;
+	margin: 0 auto -60px;
+	padding: 0 0 60px
+}
 
 #headerwrap {
 	background-color: #5F97FB;
@@ -272,40 +281,6 @@ a:focus {
 	text-align:center;
 }
 
-/* Testimonials Wrap */
-#twrap {
-	background: url(../img/t-back.jpg) no-repeat center top;
-	margin-top: 0px;
-	padding-top:60px;
-	text-align:center;
-	background-attachment: relative;
-	background-position: center center;
-	min-height: 450px;
-	width: 100%;
-
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-#twrap i {
-	font-size: 50px;
-	color: white;
-	margin-bottom: 25px;
-}
-
-#twrap p {
-	color: white;
-	font-size: 15px;
-	line-height: 30px;
-}
-
 /* clients logo */
 #cwrap {
 	background: #f7f7f7;
@@ -323,9 +298,8 @@ a:focus {
 	padding-top: 10px;
 	padding-bottom: 10px;
 	background: #2C394A;
-	position: absolute;
 	width: 100%;
-	bottom:0;
+	height: 60px;
 }
 
 #footerwrap p {
