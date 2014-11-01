@@ -11,5 +11,6 @@ angular.module('uchiwa-io').config(['$routeProvider',
       .when('/', {templateUrl: 'partials/main.html', controller: 'index'})
       .when('/download', {templateUrl: 'partials/download.html'})
       .when('/faq', {templateUrl: 'partials/faq.html'})
+      .when('/features', {templateUrl: 'partials/features.html'})
       .otherwise('/');
   }]);
