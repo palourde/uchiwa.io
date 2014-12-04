@@ -52,12 +52,12 @@ controllerModule.controller('download', ['$scope', function ($scope) {
       }
     },
     {
-      version: '0.4.0.beta',
+      version: '0.4.0.beta-2',
       md5: {
-        'i386.rpm': '927a8bde4f0b7c8239c73c6cb8c791fa',
-        'x86_64.rpm': '57a46867196afd0d21bd5ac4e74f3c35',
-        'i386.deb': '004ece70859bbdb01e84975aca041a7d',
-        'amd64.deb': 'f3a9df5f698e81af6343fe531cf9ef8e'
+        'i386.rpm': 'ef347f52aac731274fda8e96c9fd3c69',
+        'x86_64.rpm': '8354e9c1a3676671a84526581f28c130',
+        'i386.deb': 'f19450513675099ec90a013550afc80e',
+        'amd64.deb': '5964a92bcebfadb2f7d50a89e73da330'
       }
     }
   ];
