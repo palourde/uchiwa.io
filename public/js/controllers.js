@@ -7,7 +7,7 @@ controllerModule.controller('mainCtrl', function () {
 controllerModule.controller('download', ['$scope', function ($scope) {
   $scope.downloads = [
     {
-      version: '0.3.0',
+      version: '0.3.0-1',
       md5: {
         'i386.rpm': '688f98f7232f2e77e958a65fce81880b',
         'x86_64.rpm': 'e4e6a0e59453f460d3510e78bf26e0d5',
@@ -16,7 +16,7 @@ controllerModule.controller('download', ['$scope', function ($scope) {
       }
     },
     {
-      version: '0.3.1',
+      version: '0.3.1-1',
       md5: {
         'i386.rpm': '63a49a743e9b3a1b705e6a32656ee823',
         'x86_64.rpm': 'cffc647bcbd511d1cdb01bbfea2ff19d',
@@ -25,7 +25,7 @@ controllerModule.controller('download', ['$scope', function ($scope) {
       }
     },
     {
-      version: '0.3.2',
+      version: '0.3.2-1',
       md5: {
         'i386.rpm': '4acebc720b7dd9ea8eaebef5d52e72e5',
         'x86_64.rpm': '6c2bfa40844b351fb2497c18763f0b9b',
@@ -34,7 +34,7 @@ controllerModule.controller('download', ['$scope', function ($scope) {
       }
     },
     {
-      version: '0.3.3',
+      version: '0.3.3-1',
       md5: {
         'i386.rpm': '468b6a4f95bc8f6fd0af7fa3a8e925b1',
         'x86_64.rpm': '9415a52d5f1a1b056062f8eb276d3430',
@@ -43,7 +43,7 @@ controllerModule.controller('download', ['$scope', function ($scope) {
       }
     },
     {
-      version: '0.3.4',
+      version: '0.3.4-1',
       md5: {
         'i386.rpm': '5956f23a9954688bf292114d46b0b74e',
         'x86_64.rpm': '5fe85054045770fdcda6e0e9cbf6e12f',
@@ -52,12 +52,12 @@ controllerModule.controller('download', ['$scope', function ($scope) {
       }
     },
     {
-      version: '0.4.0.beta-2',
+      version: '0.4.0-1',
       md5: {
-        'i386.rpm': 'ef347f52aac731274fda8e96c9fd3c69',
-        'x86_64.rpm': '8354e9c1a3676671a84526581f28c130',
-        'i386.deb': 'f19450513675099ec90a013550afc80e',
-        'amd64.deb': '5964a92bcebfadb2f7d50a89e73da330'
+        'i386.rpm': 'b405082c8f53dfc170fffb422e9282a8',
+        'x86_64.rpm': 'ba763e9f80966d5f4005fa54e90a83fd',
+        'i386.deb': '9adfc687366445b2f29d6af72d31bb10',
+        'amd64.deb': 'fda4a0aae889891c64f45955b6ae9df4'
       }
     }
   ];
