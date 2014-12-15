@@ -59,10 +59,10 @@
         a <a href="http://sensuapp.org/docs/latest/adding_a_metric" target="_blank">Sensu metric check</a> and add a handler to send it over Graphite, for example.
       </p>
 
-      <h3 class="ctitle">The checks list is incomplete; my check won't appear!</h3>
+      <h3 class="ctitle">The checks list is incomplete; my standalone check won't appear!</h3>
       <p>
         Uchiwa uses the <strong>/checks</strong> Sensu API endpoint to build the checks list. This endpoint only provides the checks that are
-        defined on Sensu server itself so standalone checks that are only defined on some particular clients can't be shown. They will, however,
+        defined and known by the Sensu server itself, therefore standalone checks that are only defined on some particular clients can't be shown. They will, however,
         appear in the client view since they are part of the client history.
       </p>
 
