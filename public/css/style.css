@@ -95,11 +95,7 @@ a:focus {
 	font-size: 12px;
 }
 
-.navbar-default .navbar-nav > li > a:hover {
-	color: #5F97FB;
-}
-
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
 	color: #5F97FB;
 	background-color: transparent;
 }
