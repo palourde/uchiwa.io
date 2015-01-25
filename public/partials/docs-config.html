@@ -1,0 +1,114 @@
+<h3 class="top">Configuration</h3>
+<div class="hline"></div>
+<div class="spacing"></div>
+
+The Uchiwa packages install the configuration file at <code>/etc/sensu/uchiwa.json</code>.
+
+<h3 class="ctitle">Minimal Configuration</h3>
+<pre>
+  {
+    "sensu": [
+      {
+        "name": "Site 1",
+        "host": "api1.example.com",
+        "port": 4567
+      }
+    ],
+    "uchiwa": {
+      "host": "0.0.0.0",
+      "port": 3000
+    }
+  }
+</pre>
+
+<h3 class="ctitle">Complete Configuration</h3>
+<pre>
+  {
+    "sensu": [
+      {
+        "name": "Site 1",
+        "host": "api1.example.com",
+        "port": 4567
+      },
+      {
+        "name": "Site 2",
+        "host": "127.0.0.1",
+        "port": 443,
+        "ssl": true,
+        "insecure": true,
+        "path": "/site2",
+        "timeout": 5,
+        "user": "admin",
+        "pass": "secret"
+      }
+    ],
+    "uchiwa": {
+      "host": "0.0.0.0",
+      "port": 3000,
+      "refresh": 10,
+      "user": "admin",
+      "pass": "secret"
+    }
+  }
+</pre>
+
+<h3 class="ctitle">Details</h3>
+<h4>Sensu</h4>
+<code>name</code>
+<ul>
+  <li><em>String</em>. Name of the Sensu API (used as datacenter name). If empty, a random one will be generated.</li>
+</ul>
+<code>host</code>
+<ul>
+  <li><em>String</em>. Hostname or IP address of the Sensu API. <strong>Required</strong>.</li>
+</ul>
+<code>port</code>
+<ul>
+  <li><em>Integer</em>. Port of the Sensu API. The default value is <em>4567</em>.</li>
+</ul>
+<code>ssl</code>
+<ul>
+  <li><em>Boolean</em>. Determines whether or not to use the HTTPS protocol. The default value is <em>false</em>.</li>
+</ul>
+<code>insecure</code>
+<ul>
+  <li><em>Boolean</em>. Determines whether or not to accept an insecure SSL certificate. The default value is <em>false</em>.</li>
+</ul>
+<code>path</code>
+<ul>
+  <li><em>String</em>. Path of the Sensu API. Leave empty in case of doubt.</li>
+</ul>
+<code>timeout</code>
+<ul>
+  <li><em>Integer</em>. Timeout for the Sensu API, in seconds. The default value is <em>5</em>.</li>
+</ul>
+<code>user</code>
+<ul>
+  <li><em>String</em>. Username of the Sensu API. Leave empty for none.</li>
+</ul>
+<code>pass</code>
+<ul>
+  <li><em>String</em>. Password of the Sensu API. Leave empty for none.</li>
+</ul>
+<br /><br />
+<h4>Uchiwa</h4>
+<code>host</code>
+<ul>
+  <li><em>String</em>. Address on which Uchiwa will listen. The default value is <em>0.0.0.0</em>.</li>
+</ul>
+<code>port</code>
+<ul>
+  <li><em>Integer</em>. Port on which Uchiwa will listen. The default value is <em>3000</em>.</li>
+</ul>
+<code>refresh</code>
+<ul>
+  <li><em>Integer</em>. Determines the interval to pull the Sensu APIs, in seconds. The default value is <em>5</em>.</li>
+</ul>
+<code>user</code>
+<ul>
+  <li><em>String</em>. Username of the Uchiwa dashboard. Leave empty for none.</li>
+</ul>
+<code>pass</code>
+<ul>
+  <li><em>String</em>. Password of the Uchiwa dashboard. Leave empty for none.</li>
+</ul>

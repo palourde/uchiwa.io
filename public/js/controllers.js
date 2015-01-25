@@ -4,6 +4,15 @@ var controllerModule = angular.module('uchiwa-io.controllers', []);
 controllerModule.controller('mainCtrl', function () {
 });
 
+controllerModule.controller('docs', ['$routeParams', '$scope', function ($routeParams, $scope) {
+  var category = 'index';
+  
+  if (!angular.isUndefined($routeParams.category)) {
+    category = decodeURI($routeParams.category);
+  }
+  $scope.category = category;
+}]);
+
 controllerModule.controller('download', ['$scope', function ($scope) {
   $scope.downloads = [
     {
