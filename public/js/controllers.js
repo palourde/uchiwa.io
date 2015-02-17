@@ -4,15 +4,6 @@ var controllerModule = angular.module('uchiwa-io.controllers', []);
 controllerModule.controller('mainCtrl', function () {
 });
 
-controllerModule.controller('docs', ['$routeParams', '$scope', function ($routeParams, $scope) {
-  var category = 'index';
-  
-  if (!angular.isUndefined($routeParams.category)) {
-    category = decodeURI($routeParams.category);
-  }
-  $scope.category = category;
-}]);
-
 controllerModule.controller('download', ['$scope', function ($scope) {
   $scope.downloads = [
     {
@@ -70,12 +61,12 @@ controllerModule.controller('download', ['$scope', function ($scope) {
       }
     },
     {
-      version: '0.4.1-1',
+      version: '0.5.0-1',
       md5: {
-        'i386.rpm': '1eea52b2230f250d1126be1d188a1ca6',
-        'x86_64.rpm': 'b6ec77c510f38f7c304c13946565d6c3',
-        'i386.deb': '6393a772d4975074d18bea5f2a3b1bf0',
-        'amd64.deb': '6ae09e3941047d0ca4d0bb6b53967574'
+        'i386.rpm': '9fd5ceaabfc61e1aca67fd62c06693bb',
+        'x86_64.rpm': '27a9bdfe3d105f89edc9dfe814fe8ce5',
+        'i386.deb': '2eb2d3951fae0eaa73b73e3cec2af9dd',
+        'amd64.deb': 'a722db9f0fbd3baaeedf35836710c4aa'
     }
   }
   ];
