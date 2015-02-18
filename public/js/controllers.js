@@ -60,7 +60,6 @@ controllerModule.controller('download', ['$scope', function ($scope) {
         'amd64.deb': 'fda4a0aae889891c64f45955b6ae9df4'
       }
     }
-  }
   ];
   var i = ($scope.downloads.length) - 1;
   $scope.latest = $scope.downloads[i]
