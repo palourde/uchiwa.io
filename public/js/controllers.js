@@ -61,6 +61,15 @@ controllerModule.controller('download', ['$scope', function ($scope) {
       }
     },
     {
+      version: '0.4.4-1',
+      md5: {
+        'i386.rpm': '1eea52b2230f250d1126be1d188a1ca6',
+        'x86_64.rpm': 'b6ec77c510f38f7c304c13946565d6c3',
+        'i386.deb': '6393a772d4975074d18bea5f2a3b1bf0',
+        'amd64.deb': '6ae09e3941047d0ca4d0bb6b53967574'
+      }
+    },
+    {
       version: '0.5.1-1',
       md5: {
         'i386.rpm': '2afc460754ae6f7e6d705106c02be9ef',
