@@ -61,7 +61,7 @@ controllerModule.controller('download', ['$scope', function ($scope) {
       }
     },
     {
-      version: '0.4.4-1',
+      version: '0.4.1-1',
       md5: {
         'i386.rpm': '1eea52b2230f250d1126be1d188a1ca6',
         'x86_64.rpm': 'b6ec77c510f38f7c304c13946565d6c3',
