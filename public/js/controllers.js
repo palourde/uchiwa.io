@@ -122,6 +122,15 @@ controllerModule.controller('download', ['$scope', function ($scope) {
         'i386.deb': 'b417bcf739f0f88e7e9d5cda373a0145',
         'amd64.deb': 'ed34d86d722c799ef30f245d0b38a60d'
       }
+    },
+    {
+      version: '0.9.1-1',
+      md5: {
+        'i386.rpm': 'c9d68b79761352119f246623e813cc66',
+        'x86_64.rpm': 'f1044cbb5aacae3e4b155edda2679730',
+        'i386.deb': '54836dc74d26a665d3a2bc8fbc095fe8',
+        'amd64.deb': '2ab26090c1dbb39874459ab84aba51e4'
+      }
     }
   ];
   var i = ($scope.downloads.length) - 1;
