@@ -256,6 +256,7 @@ controllerModule.controller('download', ['$scope', function ($scope) {
           'amd64.deb': '145852927ddd0575eb6d2f1a2d1d27d0',
           'i386.deb': '07cfcff86834f2c7b0a463012deb69c7'
         }
+      }
     }
   ];
   var i = ($scope.downloads.length) - 1;
