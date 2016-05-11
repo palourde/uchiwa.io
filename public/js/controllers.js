@@ -257,6 +257,33 @@ controllerModule.controller('download', ['$scope', function ($scope) {
         'amd64.deb': '145852927ddd0575eb6d2f1a2d1d27d0',
         'i386.deb': '07cfcff86834f2c7b0a463012deb69c7'
       }
+    },
+    {
+      version: '0.14.3-1',
+      md5: {
+        'i386.rpm': '365118bdf0a0ee2c282302101965b1ce',
+        'x86_64.rpm': '7546412a24cc4162ac25d26726e0b504',
+        'amd64.deb': 'ff2c0b34e43e6259df40b6c75ba88154',
+        'i386.deb': '718413867bc9c4c15121704de4508c6c'
+      }
+    },
+    {
+      version: '0.14.4-1',
+      md5: {
+        'i386.rpm': '8d071de829a83a3f4a7a81a49f686091',
+        'x86_64.rpm': '0ed62aa64d7aeadd065f62b704936897',
+        'amd64.deb': 'f7245ef2928f4603bdaee732368e8683',
+        'i386.deb': 'ca9c8abc22ffd216423061d0dfc7d634'
+      }
+    },
+    {
+      version: '0.14.5-1',
+      md5: {
+        'i386.rpm': '2c58b32cf269e0244b7087a3e59df957',
+        'x86_64.rpm': '4e0d5c14c4ace11440755d27b74e941e',
+        'amd64.deb': 'a667667aa0b26afaa794c5287f014c7d',
+        'i386.deb': '2cae103399dfdee1ba5f0660be192d65'
+      }
     }
   ];
   var i = ($scope.downloads.length) - 1;
