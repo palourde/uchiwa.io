@@ -301,15 +301,15 @@ controllerModule.controller('download', ['$scope', function ($scope) {
         'x86_64.rpm': 'ac82dfc28678178b85c97404371b8861',
         'amd64.deb': 'c44c839096b8787679f9f291e29edb76',
         'i386.deb': '22c07d38d27abf3939e5cba308bd9aa9'
-      },
-      {
-        version: '0.17.0-1',
-        md5: {
-          'i386.rpm': 'b2917bcfa9a68c9ea1d07c1802efabf3',
-          'x86_64.rpm': '893c9aa5cb21a1c09edd6eeb9c261637',
-          'amd64.deb': '2370172369f75b8b2188d5546d24ed8d',
-          'i386.deb': 'cf7e47afff60b62813e32b8b8882b0c7'
-        }
+      }
+    },
+    {
+      version: '0.17.0-1',
+      md5: {
+        'i386.rpm': 'b2917bcfa9a68c9ea1d07c1802efabf3',
+        'x86_64.rpm': '893c9aa5cb21a1c09edd6eeb9c261637',
+        'amd64.deb': '2370172369f75b8b2188d5546d24ed8d',
+        'i386.deb': 'cf7e47afff60b62813e32b8b8882b0c7'
       }
     }
   ];
