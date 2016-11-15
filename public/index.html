@@ -1,88 +1,98 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="uchiwa-io" ng-controller="mainCtrl">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" type="image/png" href="img/favicon.png">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" type="image/png" href="img/favicon.png">
 
-    <title>Uchiwa | Simple Dashboard for Sensu</title>
+  <title>Uchiwa | Simple Dashboard for Sensu</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="css/style.css" rel="stylesheet">
-    <link href="bower_components/fontawesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="//fonts.googleapis.com/css?family=Roboto:300,400,700,900" rel="stylesheet" type="text/css">
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="bower_components/fontawesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="//fonts.googleapis.com/css?family=Roboto:300,400,700,900" rel="stylesheet" type="text/css">
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
 
-    <script src="bower_components/modernizr/modernizr.js"></script>
-  </head>
+  <script src="bower_components/modernizr/modernizr.js"></script>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  <body ng-cloak>
+  ga('create', 'UA-56100759-1', 'auto');
+  ga('send', 'pageview');
 
-    <!-- Fixed navbar -->
-    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <span class="navbar-brand" href="#"><img src="img/uchiwa.png"></span>
-        </div>
-        <div class="navbar-collapse collapse navbar-right">
-          <ul class="nav navbar-nav">
-            <li><a href="/">HOME</a></li>
-            <li><a href="#features">FEATURES</a></li>
-            <li><a href="https://docs.uchiwa.io">DOCS</a></li>
-            <li><a href="#support">SUPPORT</a></li>
-            <li><a href="#download">DOWNLOAD</a></li>
-            <li><a href="http://blog.uchiwa.io">BLOG</a></li>
-            <li><a href="https://twitter.com/uchiwaio" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a></li>
-            <li><a href="https://github.com/sensu/uchiwa" target="_blank"><i class="fa fa-github-square fa-2x"></i></a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
+  </script>
+</head>
+
+<body ng-cloak>
+
+  <!-- Fixed navbar -->
+  <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <span class="navbar-brand" href="#"><img src="img/uchiwa.png"></span>
       </div>
+      <div class="navbar-collapse collapse navbar-right">
+        <ul class="nav navbar-nav">
+          <li><a href="/">HOME</a></li>
+          <li><a href="#features">FEATURES</a></li>
+          <li><a href="https://docs.uchiwa.io">DOCS</a></li>
+          <li><a href="#support">SUPPORT</a></li>
+          <li><a href="#download">DOWNLOAD</a></li>
+          <li><a href="http://blog.uchiwa.io">BLOG</a></li>
+          <li><a href="https://twitter.com/uchiwaio" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a></li>
+          <li><a href="https://github.com/sensu/uchiwa" target="_blank"><i class="fa fa-github-square fa-2x"></i></a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
     </div>
+  </div>
 
 
   <div id="genericwrap" ng-view autoscroll="true"></div>
 
-	<!-- *****************************************************************************************************************
-	 FOOTER
-	 ***************************************************************************************************************** -->
-	 <div id="footerwrap">
-	 	<div class="container">
-		 	<div class="row">
-		 		<div class="col-lg-3">
-		 			<p>&copy; 2016 Simon Plourde</p>
-		 		</div>
-		 		<div class="col-lg-3 col-lg-offset-6">
-		 			<p class="text-right">Made with <i class="fa fa-heart"></i> in Montreal</p>
-		 		</div>
+  <!-- *****************************************************************************************************************
+  FOOTER
+  ***************************************************************************************************************** -->
+  <div id="footerwrap">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <p>&copy; 2016 Simon Plourde</p>
+        </div>
+        <div class="col-lg-3 col-lg-offset-6">
+          <p class="text-right">Made with <i class="fa fa-heart"></i> in Montreal</p>
+        </div>
 
-		 	</div><! --/row -->
-	 	</div><! --/container -->
-	 </div><! --/footerwrap -->
+      </div><! --/row -->
+    </div><! --/container -->
+  </div><! --/footerwrap -->
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="bower_components/angular/angular.min.js"></script>
-    <script src="bower_components/angular-route/angular-route.min.js"></script>
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="bower_components/angular/angular.min.js"></script>
+  <script src="bower_components/angular-route/angular-route.min.js"></script>
 
-    <script src="js/app.js"></script>
-    <script src="js/controllers.js"></script>
-  </body>
+  <script src="js/app.js"></script>
+  <script src="js/controllers.js"></script>
+</body>
 </html>
