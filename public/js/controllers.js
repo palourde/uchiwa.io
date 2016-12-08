@@ -392,6 +392,7 @@ controllerModule.controller('download', ['$scope', function ($scope) {
         'amd64.deb': '920ca35674cbe31f8b43f5b5dce018e7',
         'i386.deb': '5b46e88a3495ff1b9aabd0cf4f3e5637'
       }
+    }
   ];
   var i = ($scope.downloads.length) - 1;
   $scope.latest = $scope.downloads[i]
