@@ -473,6 +473,15 @@ controllerModule.controller('download', ['$scope', function ($scope) {
         'amd64.deb': 'cd3961570194c48c6d2c2a70c777a149',
         'i386.deb': '83f695fb2e59fd11f7c9ada229ae41a5'
       }
+    },
+    {
+      version: '0.25.3-1',
+      md5: {
+        'i386.rpm': 'fa7deec78deeb1e304c748fbd14103be',
+        'x86_64.rpm': '6c123d9b897b18dd85744d5c6bc02506',
+        'amd64.deb': '942359880ab89f2e5ce7cb3df67c5fe0',
+        'i386.deb': '654dbaee7cf9f684748efe0935288497'
+      }
     }
   ];
   var i = ($scope.downloads.length) - 1;
