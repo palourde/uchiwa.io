@@ -62,7 +62,7 @@
       <h3>Older Versions</h3>
       <div class="hline"></div>
       <div class="spacing"></div>
-      <div ng-repeat="download in downloads | orderBy:'+':true" ng-if="!$first">
+      <div ng-repeat="download in downloads | orderBy:'download.version' track by download.version" ng-if="!$first">
 
         <h4>{{download.version}}</h4>
         <div><a href="http://dl.bintray.com/palourde/uchiwa/uchiwa-{{download.version}}.i386.rpm">uchiwa-{{download.version}}.i386.rpm</a> ({{download.md5["i386.rpm"]}})</div>
