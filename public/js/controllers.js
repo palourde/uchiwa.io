@@ -527,6 +527,24 @@ controllerModule.controller('download', ['$scope', function ($scope) {
         'amd64.deb': '90c5432a511257dcea97382bc845e74f',
         'i386.deb': '3d680b00fa6ac6f6f3ca84a21b08d2eb'
       }
+    },
+    {
+      version: '1.1.0-1',
+      md5: {
+        'i386.rpm': '69f94f334f63ce158a2672012f11dccd',
+        'x86_64.rpm': '921b80642779e0fa05425d26fc1c4891',
+        'amd64.deb': 'cc4d03962d8b1601dc212606f9901688',
+        'i386.deb': 'bc5ebd0b794db9b23576db8f1b1ee9da'
+      }
+    },
+    {
+      version: '1.1.1-1',
+      md5: {
+        'i386.rpm': '0e0ed6b5490c685e68d1ba0a8da8f7f6',
+        'x86_64.rpm': '209f52855db7b83e71a425f37ca2d02a',
+        'amd64.deb': '7c9f4d3507a6f73e2cdae8c1f1c66d56',
+        'i386.deb': 'dc6b3007d1d345c0835ab8f31c8816cd'
+      }
     }
   ];
   var i = ($scope.downloads.length) - 1;
