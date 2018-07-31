@@ -3,7 +3,7 @@
   "private": true,
   "ignore": [
     "**/.*",
-    "public/bower_components",
+    "docs/bower_components",
     "test",
     "tests"
   ],
